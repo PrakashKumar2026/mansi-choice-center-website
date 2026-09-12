@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mansi Choice Center - Digital Seva Kendra, Nimora Raipur</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-area">
+      <img src="images/logo.jpeg" alt="Mansi Choice Center Logo" class="logo"
+           onerror="this.onerror=null; this.replaceWith(Object.assign(document.createElement('div'),{className:'logo-fallback',innerHTML:'<i class=\'fa-solid fa-building-columns\'></i>'}));">
+      <div>
+        <h1>Mansi Choice Center</h1>
+        <p class="tagline">Digital Seva, Har Kaam Aasaan</p>
+      </div>
+    </div>
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <button class="btn btn-login" onclick="openLoginModal()"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
+      <button class="btn btn-apply" onclick="openModal()">Apply Now</button>
+      <button class="theme-toggle" id="themeToggle" title="Dark / Light Mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-shape shape-circle"></div>
+    <div class="hero-shape shape-triangle"></div>
+    <div class="hero-shape shape-dot"></div>
+
+    <div class="hero-text reveal">
+      <span class="hero-badge"><i class="fa-solid fa-shield-heart"></i> 100% Trusted CSC Centre</span>
+      <h1>Digital Seva, <span class="highlight">Har Kaam Aasaan</span></h1>
+      <p>Mansi Choice Center — Nimora, Raipur (Chhattisgarh) mein aapka bharosemand
+        Common Service Centre. Aadhaar se lekar Vivah Praman Patra tak, sabhi seva
+        ek hi jagah, samay par.</p>
+
+      <div class="hero-buttons">
+        <a href="tel:+916267294111" class="btn btn-hero-call"><i class="fa-solid fa-phone"></i> Call Now</a>
+        <a href="https://wa.me/916267294111" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </div>
+
+      <p class="hero-tags-label">Featured Services:</p>
+      <div class="hero-tags">
+        <a href="#services" class="tag">Aadhaar Card</a>
+        <a href="#services" class="tag">PAN Card</a>
+        <a href="#services" class="tag">Voter ID</a>
+        <a href="#services" class="tag">Vivah Praman Patra</a>
+        <a href="#services" class="tag">GST Services</a>
+      </div>
+    </div>
+
+    <div class="hero-slider reveal">
+      <img src="images/banner1.jpeg" class="hero-slide active" alt="Mansi Choice Center Computer Services">
+      <img src="images/banner6.jpeg" class="hero-slide active" alt="Mansi Choice Center Computer Services">
+      <img src="images/banner7.jpeg" class="hero-slide active" alt="Mansi Choice Center Computer Services">
+      <img src="images/banner3.jpeg" class="hero-slide" alt="Mansi Choice Center Services">
+      <img src="images/banner4.jpeg" class="hero-slide" alt="Mansi Choice Center Cards">
+      <img src="images/banner5.jpeg" class="hero-slide" alt="Mansi Choice Center Certificates">
+      <img src="images/banner2.jpeg" class="hero-slide" alt="Marriage Certificate Services">
+      <div class="hero-slider-dots" id="heroDots"></div>
+    </div>
+  </section>
+
+  <!-- TRUST STATS BAR -->
+  <section class="stats-bar reveal">
+    <div class="stat"><i class="fa-solid fa-shield-heart"></i><span>100% Trusted</span></div>
+    <div class="stat"><i class="fa-solid fa-bolt"></i><span>Fast Service</span></div>
+    <div class="stat"><i class="fa-solid fa-users"></i><span>1000+ Customers Served</span></div>
+    <div class="stat"><i class="fa-solid fa-list-check"></i><span>30+ Services Under One Roof</span></div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about reveal">
+    <h2>Hamare Baare Mein</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          <strong>Mansi Choice Center</strong> ek authorized <strong>Common Service Centre (CSC)</strong>
+          hai, jo <strong>Nimora, Laxmi Nagar Bhathapara, Post Sondra, Thana Dharsiwa,
+          Zila Raipur (Chhattisgarh)</strong> mein sthit hai. (CSC ID: 463331310013)
+        </p>
+        <p>
+          Hum Aadhaar Card, PAN Card, Voter ID, Ayushman Card, e-Shram Card, sabhi
+          tarah ke praman patra, विवाह प्रमाण पत्र, GST, computer courses aur
+          bahut saari sarkari evam private seva ek hi chhat ke niche pradan
+          karte hain — bharosemand aur samay par.
+        </p>
+        <ul class="about-checklist">
+          <li><i class="fa-solid fa-circle-check"></i> Authorized Common Service Centre (CSC)</li>
+          <li><i class="fa-solid fa-circle-check"></i> 30+ Sarkari aur Private Seva Ek Chhat Ke Niche</li>
+          <li><i class="fa-solid fa-circle-check"></i> Samay Par aur Bharosemand Kaam</li>
+          <li><i class="fa-solid fa-circle-check"></i> Vajib aur Uchit Shulk</li>
+        </ul>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat-box">
+          <i class="fa-solid fa-award"></i>
+          <h3>100%</h3>
+          <p>Trusted Service</p>
+        </div>
+        <div class="stat-box">
+          <i class="fa-solid fa-list-check"></i>
+          <h3>30+</h3>
+          <p>Services Offered</p>
+        </div>
+        <div class="stat-box">
+          <i class="fa-solid fa-users"></i>
+          <h3>1000+</h3>
+          <p>Happy Customers</p>
+        </div>
+        <div class="stat-box">
+          <i class="fa-solid fa-bolt"></i>
+          <h3>Fast</h3>
+          <p>Turnaround Time</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="services reveal">
+    <h2>Hamari Seva</h2>
+    <div class="services-grid">
+      <div class="service-card"><i class="fa-solid fa-fingerprint icon"></i><h3>Aadhaar Card (नया/सुधार)</h3></div>
+      <div class="service-card"><i class="fa-solid fa-id-card icon"></i><h3>PAN Card (नया/सुधार)</h3></div>
+      <div class="service-card"><i class="fa-solid fa-check-to-slot icon"></i><h3>Voter ID Card</h3></div>
+      <div class="service-card"><i class="fa-solid fa-heart-pulse icon"></i><h3>Ayushman Card</h3></div>
+      <div class="service-card"><i class="fa-solid fa-hard-hat icon"></i><h3>e-Shram Card</h3></div>
+      <div class="service-card"><i class="fa-solid fa-scroll icon"></i><h3>Jati Praman Patra</h3></div>
+      <div class="service-card"><i class="fa-solid fa-house icon"></i><h3>Nivas Praman Patra</h3></div>
+      <div class="service-card"><i class="fa-solid fa-sack-dollar icon"></i><h3>Aay Praman Patra</h3></div>
+      <div class="service-card"><i class="fa-solid fa-baby icon"></i><h3>Janam Praman Patra</h3></div>
+      <div class="service-card"><i class="fa-solid fa-file-shield icon"></i><h3>Mrityu Praman Patra</h3></div>
+      <div class="service-card"><i class="fa-solid fa-ring icon"></i><h3>Vivah Praman Patra</h3></div>
+      <div class="service-card"><i class="fa-solid fa-bolt icon"></i><h3>Bijli Bill Bhugtan</h3></div>
+      <div class="service-card"><i class="fa-solid fa-mobile-screen-button icon"></i><h3>Mobile Recharge</h3></div>
+      <div class="service-card"><i class="fa-solid fa-satellite-dish icon"></i><h3>DTH Recharge</h3></div>
+      <div class="service-card"><i class="fa-solid fa-money-bill-transfer icon"></i><h3>Money Transfer</h3></div>
+      <div class="service-card"><i class="fa-solid fa-copy icon"></i><h3>Photocopy / Color Print</h3></div>
+      <div class="service-card"><i class="fa-solid fa-layer-group icon"></i><h3>Lamination (A4/A3)</h3></div>
+      <div class="service-card"><i class="fa-solid fa-camera icon"></i><h3>Passport Size Photo</h3></div>
+      <div class="service-card"><i class="fa-solid fa-scanner icon"></i><h3>Scanning</h3></div>
+      <div class="service-card"><i class="fa-solid fa-print icon"></i><h3>Print Out</h3></div>
+      <div class="service-card"><i class="fa-solid fa-file-signature icon"></i><h3>Online Form Bharna</h3></div>
+      <div class="service-card"><i class="fa-solid fa-passport icon"></i><h3>Passport Seva</h3></div>
+      <div class="service-card"><i class="fa-solid fa-train icon"></i><h3>IRCTC Ticket Booking</h3></div>
+      <div class="service-card"><i class="fa-solid fa-plane icon"></i><h3>Flight Ticket Booking</h3></div>
+      <div class="service-card"><i class="fa-solid fa-wheat-awn icon"></i><h3>Ration Card</h3></div>
+      <div class="service-card"><i class="fa-solid fa-file-invoice icon"></i><h3>Khasra Nakal / B-1 / P-2</h3></div>
+      <div class="service-card"><i class="fa-solid fa-graduation-cap icon"></i><h3>Chhatravriti Form</h3></div>
+      <div class="service-card"><i class="fa-solid fa-id-badge icon"></i><h3>Admit Card Print</h3></div>
+      <div class="service-card"><i class="fa-solid fa-file-word icon"></i><h3>Resume / PDF Banana</h3></div>
+      <div class="service-card"><i class="fa-solid fa-sim-card icon"></i><h3>SIM Booking (Jio/Airtel/VI/BSNL)</h3></div>
+      <div class="service-card"><i class="fa-solid fa-chalkboard-user icon"></i><h3>Computer Courses (Tally, DTP, CCC, MS-CIT)</h3></div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="faq reveal">
+    <h2>Common Sawaal (FAQ)</h2>
+    <div class="faq-item">
+      <button class="faq-question">Mansi Choice Center kya hai?<i class="fa-solid fa-chevron-down"></i></button>
+      <p class="faq-answer">Ye Nimora, Raipur (Chhattisgarh) mein sthit ek authorized Common Service Centre (CSC) hai, jahan sabhi sarkari aur online seva ek hi jagah milti hai.</p>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Seva ke liye kya documents chahiye?<i class="fa-solid fa-chevron-down"></i></button>
+      <p class="faq-answer">Har seva ke liye alag documents chahiye hote hai. Sahi jaankari ke liye humse call ya WhatsApp karein: 6267294111.</p>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Kaam kitne din mein ho jayega?<i class="fa-solid fa-chevron-down"></i></button>
+      <p class="faq-answer">Zyada tar seva 1-7 working days mein poori ho jati hai, seva ke type par depend karta hai.</p>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Kya vivah praman patra kanooni maanyata prapt hota hai?<i class="fa-solid fa-chevron-down"></i></button>
+      <p class="faq-answer">Haan, hamare yaha bana vivah praman patra 100% kanooni maanyata prapt hota hai — love marriage, court marriage, mandir marriage sabhi ke liye.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact reveal">
+    <h2>Sampark Karein</h2>
+    <div class="contact-grid">
+      <div class="contact-info-col">
+        <div class="contact-info">
+          <p><i class="fa-solid fa-phone"></i> Call: <a href="tel:+916267294111">6267294111</a></p>
+          <p><i class="fa-brands fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/916267294111">6267294111</a></p>
+          <p><i class="fa-solid fa-location-dot"></i> Nimora, Laxmi Nagar Bhathapara, Post Sondra, Thana Dharsiwa, Zila Raipur (C.G.)</p>
+          <p><i class="fa-solid fa-id-card"></i> CSC ID: 463331310013</p>
+        </div>
+
+        <div class="qr-share-box">
+          <img src="images/qr-code.png" alt="QR Code" class="qr-img"
+               onerror="this.style.display='none'; document.getElementById('qrHint').style.display='block';">
+          <p id="qrHint" style="display:none; font-size:0.8rem; color:#999;">QR code website live hone ke baad yahan dikhega</p>
+          <button class="btn" onclick="shareWebsite()"><i class="fa-solid fa-share-nodes"></i> Share Website</button>
+          <p class="share-hint">Is QR ko scan karke seedha hamari website par pahunche</p>
+        </div>
+
+        <div class="map-container">
+          <!-- <iframe src="YAHAN_GOOGLE_MAPS_EMBED_LINK" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+        </div>
+      </div>
+
+      <div class="contact-form-col">
+        <form id="contactForm" class="contact-form">
+          <div class="input-group">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="cName" placeholder="Your Name" required>
+          </div>
+          <div class="input-group">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="cEmail" placeholder="Email Address" required>
+          </div>
+          <div class="input-group">
+            <i class="fa-solid fa-phone"></i>
+            <input type="tel" id="cPhone" placeholder="Contact Number" required>
+          </div>
+          <div class="input-group">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" id="cLocation" placeholder="Your Location" required>
+          </div>
+          <div class="input-group textarea-group">
+            <i class="fa-solid fa-message"></i>
+            <textarea id="cMessage" placeholder="Your Message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-whatsapp full-width"><i class="fa-brands fa-whatsapp"></i> Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLY NOW MODAL -->
+  <div class="modal-overlay" id="applyModal">
+    <div class="modal-box">
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <h2>Apply Now</h2>
+      <form id="applyForm">
+        <input type="text" id="applyName" placeholder="Aapka Naam" required>
+        <input type="tel" id="applyPhone" placeholder="Phone Number" required>
+
+        <p class="checkbox-title">Services Chunein:</p>
+        <div class="checkbox-grid">
+          <label><input type="checkbox" value="Aadhaar Card"> Aadhaar Card</label>
+          <label><input type="checkbox" value="PAN Card"> PAN Card</label>
+          <label><input type="checkbox" value="Voter ID"> Voter ID</label>
+          <label><input type="checkbox" value="Ayushman Card"> Ayushman Card</label>
+          <label><input type="checkbox" value="Jati/Aay/Nivas Praman Patra"> Jati/Aay/Nivas Praman Patra</label>
+          <label><input type="checkbox" value="Vivah Praman Patra"> Vivah Praman Patra</label>
+          <label><input type="checkbox" value="Ration Card"> Ration Card</label>
+          <label><input type="checkbox" value="Money Transfer"> Money Transfer</label>
+          <label><input type="checkbox" value="Photocopy/Print/Lamination"> Photocopy/Print/Lamination</label>
+          <label><input type="checkbox" value="IRCTC/Flight Ticket"> IRCTC/Flight Ticket</label>
+          <label><input type="checkbox" value="Computer Course"> Computer Course</label>
+          <label><input type="checkbox" value="Other Seva"> Other Seva</label>
+        </div>
+
+        <button type="submit" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp Par Bheje</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- LOGIN MODAL -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="login-box">
+      <span class="modal-close" onclick="closeLoginModal()">&times;</span>
+
+      <div class="login-avatar">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <h2>Welcome Back</h2>
+      <p class="login-subtitle">Mansi Choice Center mein login karein</p>
+
+      <div class="login-tabs">
+        <button type="button" class="tab-btn active" id="tabPassword" onclick="switchLoginTab('password')">Password</button>
+        <button type="button" class="tab-btn" id="tabOtp" onclick="switchLoginTab('otp')">OTP</button>
+      </div>
+
+      <form id="loginForm">
+        <div class="input-group">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" id="loginUsername" placeholder="Username / Mobile Number" required>
+        </div>
+
+        <div class="input-group" id="passwordGroup">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" id="loginPassword" placeholder="Password">
+          <i class="fa-solid fa-eye toggle-eye" id="togglePassword"></i>
+        </div>
+
+        <div class="input-group otp-group" id="otpGroup" style="display:none;">
+          <i class="fa-solid fa-shield-halved"></i>
+          <input type="text" id="loginOtp" placeholder="Enter OTP">
+          <button type="button" class="otp-btn" id="sendOtpBtn" onclick="sendOtp()">Send OTP</button>
+        </div>
+
+        <div class="login-options">
+          <label class="remember-me"><input type="checkbox"> Remember Me</label>
+          <a href="#" class="forgot-link">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn login-submit">
+          <i class="fa-solid fa-right-to-bracket"></i> Login
+        </button>
+      </form>
+
+      <p class="login-footer-text">Naya user ho? <a href="https://wa.me/916267294111">Humse WhatsApp par sampark karein</a></p>
+    </div>
+  </div>
+
+  <!-- FLOATING BUTTONS -->
+  <a href="https://wa.me/916267294111" target="_blank" class="floating-whatsapp" title="WhatsApp Karein">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <button class="back-to-top" id="backToTop" title="Upar Jaayein">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 Mansi Choice Center, Nimora, Raipur. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
